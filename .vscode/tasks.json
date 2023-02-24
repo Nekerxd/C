@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Task Debug",
+			"command": "D:\\MinGW\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g3",
+				"-Wno-all",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: D:\\MinGW\\bin\\gcc.exe"
+		}
+	]
+}
